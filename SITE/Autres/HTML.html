@@ -1,0 +1,98 @@
+<html>
+<head>
+  <center>
+	<title>Tracker Solaire</title>
+    <center>
+</head>
+<body>
+	<header>
+		<h1>Tracker Solaire</h1>
+		<nav>
+			<ul>
+  <head>
+ 
+    <style>
+      .tabcontent {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+ 
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'tab1')">Inclinaison</button>
+      <button class="tablinks" onclick="openTab(event, 'tab2')">Onglet 2</button>
+      <button class="tablinks" onclick="openTab(event, 'tab3')">Onglet 3</button>
+    </div>
+
+    <div id="tab1" class="tabcontent">
+     		<section id="test1">
+	
+
+  <!-- https://codepen.io/jlalovi/details/bIyAr -->
+<div class="container">
+  <!-- DONUT CHART BLOCK (LEFT-CONTAINER) --> 
+  <div class="donut-chart-block block"> 
+                    <h2 class="titular">Luminosité</h2>
+                    <div class="donut-chart">
+ <!-- PORCIONES GRAFICO CIRCULAR
+      ELIMINADO #donut-chart
+      MODIFICADO CSS de .donut-chart -->
+      <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
+     <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
+     <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
+     <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+ <!-- FIN AÑADIDO GRÄFICO -->
+                            <p class="center-date">vendredi
+                             <br><span class="scnd-font-color">12/05/2023</span></p>        
+                    </div>
+                    <ul class="os-percentages horizontal-list">
+                        <li>
+                            <p class="ios os scnd-font-color">00h-6h</p>
+                            <p class="os-percentage">5<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="mac os scnd-font-color">6h-10h</p>
+                            <p class="os-percentage">15<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="linux os scnd-font-color">10h-14</p>
+                            <p class="os-percentage">25<sup>%</sup></p>
+                        </li>
+                        <li>
+                            <p class="win os scnd-font-color">14h-17h</p>
+                            <p class="os-percentage">55<sup>%</sup></p>
+                        </li>
+                    </ul>
+                </div>
+
+
+      
+
+    <div id="tab3" class="tabcontent">
+      <h2>Onglet 3</h2>
+      <p>Contenu de l'onglet 3.</p>
+    </div>
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+    </script>
+  </body>
+</html>
+			</ul>
+		</nav>
+	</header>
+	<main>
