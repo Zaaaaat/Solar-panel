@@ -1,18 +1,205 @@
 html{
-    background-image: url(../Images/Fond.jpg);
+    background-image: url(../Images/fond2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     margin: 0px 0px 0px 0px;
-    font-family: Courier, monospace;
 }
 
 header{
     display: flex;
     justify-content: center;
 }
+
+nav{
+    width: 100%;
+    border-bottom: rgb(26, 0, 141) 5px solid;
+}
+
+.nav-bar {
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #000000; 
+    padding: 10px; 
+  }
+
+  .nav-bar h1{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  
+  .under-nav {
+    display: flex;
+    justify-content: flex-end; 
+  }
+  
+  .under-nav h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+  /***  CSS DU FORMULAIRE  ***/
+
+h1, h2, p, a, span {
+    color: #fff;
+}
+
+.titular {
+    text-align: center;
+    border-top-right-radius: 5px;
+}
+
+.horizontal-list {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.horizontal-list li {
+    float: left;
+}
+
+.block {
+    background: #394264;
+    float: left;
+    width: 300px;
+    overflow: hidden;
+}
+
+.donut-chart-block .titular {
+    padding: 10px 0;
+}
+
+.os-percentages li {
+    width: 75px;
+    text-align: center;
+    background: #50597b;
+}
+
+.os {
+    margin: 0;
+    padding: 10px 0 5px;
+    font-size: 15px;
+}
+
+.os.ios {
+    border-top: 4px solid #e64c65;
+}
+
+.os.mac {
+    border-top: 4px solid #11a8ab;
+}
+
+.os.linux {
+    border-top: 4px solid #fcb150;
+}
+
+.os.win {
+    border-top: 4px solid #4fc4f6;
+}
+
+.os-percentage {
+    margin: 0;
+    padding: 0 0 15px 10px;
+    font-size: 25px;
+}
+
+.eje-x li {
+
+}
+
+.donut-chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 100%;
+}
+
+p.center-date {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+    padding-bottom: 40px;
+    color: wheat;
+}
+
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#porcion1 {
+    transform: rotate(0deg);
+}
+
+#porcion1 .quesito {
+    background-color: #E64C65;
+    transform: rotate(76deg);
+}
+
+#porcion2 {
+    transform: rotate(76deg);
+}
+
+#porcion2 .quesito {
+    background-color: #11A8AB;
+    transform: rotate(140deg);
+}
+
+#porcion3 {
+    transform: rotate(215deg);
+}
+
+#porcion3 .quesito {
+    background-color: #4FC4F6;
+    transform: rotate(113deg);
+}
+
+#porcionFin {
+    transform: rotate(-32deg);
+}
+
+#porcionFin .quesito {
+    background-color: #FCB150;
+    transform: rotate(32deg)
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.titular{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+  

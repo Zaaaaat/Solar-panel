@@ -1,34 +1,81 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-
+<html>
 <head>
-    <title> Capybara </title>
+    <meta charset="utf-8">
+    <title>Tracker Solaire</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" type="image/x-icon" href="Images/Capy.jpg">
-
+    <script src="../JS/script.js""></script>
 
 </head>
-
-
 <body>
-
     <header>
+        <nav>
+            <div class="nav-bar">
+                <div>
+                    <h1>TRACKER SOLAIRE</h1>
+                </div>
+                <div class="under-nav">
+                    <button onclick="openTab(event, 'tab1')">Inclinaison</button>
+                    <button onclick="openTab(event, 'tab2')">Onglet1</button>
+                    <button onclick="openTab(event, 'tab3')">Onglet2</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
 
-        <div id="solaire">
-            
+
+        <div id="tab1" class="tabcontent">
+        
+            <div class="container">
+                <div class="donut-chart-block block">
+                    <h2 class="titular">LUMINOSITE</h2>
+                    <div class="donut-chart">
+                        <div id="porcion1" class="recorte">
+                            <div class="quesito ios" data-rel="21"></div>
+                        </div>
+                        <div id="porcion2" class="recorte">
+                            <div class="quesito mac" data-rel="39"></div>
+                        </div>
+                        <div id="porcion3" class="recorte">
+                            <div class="quesito win" data-rel="31"></div>
+                        </div>
+                        <div id="porcionFin" class="recorte">
+                            <div class="quesito linux" data-rel="9"></div>
+                        </div>
+                    </div>
+                    <p class="center-date">VENDREDI<br><span class="scnd-font-color">12/05/2023</span></p>
+                </div>
+                <ul class="os-percentages horizontal-list">
+                    <li>
+                        <p class="ios os scnd-font-color">00h-6h</p>
+                        <p class="os-percentage">5<sup>%</sup></p>
+                    </li>
+                    <li>
+                        <p class="mac os scnd-font-color">6h-10h</p>
+                        <p class="os-percentage">15<sup>%</sup></p>
+                    </li>
+                    <li>
+                        <p class="linux os scnd-font-color">10h-14</p>
+                        <p class="os-percentage">25<sup>%</sup></p>
+                    </li>
+                    <li>
+                        <p class="win os scnd-font-color">14h-17h</p>
+                        <p class="os-percentage">55<sup>%</sup></p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-    </header>
+        <div id="tab3" class="tabcontent">
+            <h2>Onglet 3</h2>
+            <p>Contenu de l'onglet 3.</p>
+        </div>
 
-        <main>
-
-        </main>
-
+    </main>
     <footer>
-
     </footer>
-
 </body>
-
 
 </html>
