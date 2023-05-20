@@ -52,6 +52,7 @@ nav{
 
 h1, h2, p, a, span {
     color: #fff;
+    margin: 20px;
 }
 
 .titular {
