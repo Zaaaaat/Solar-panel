@@ -55,6 +55,10 @@ h1, h2, p, a, span {
     margin: 20px;
 }
 
+a:hover {
+    cursor:pointer;
+}
+
 .titular {
     text-align: center;
     border-top-right-radius: 5px;
